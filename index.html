@@ -217,7 +217,7 @@
   </div>
 </div><!-- HERO --><div class="hero" id="home">
   <div class="hero-text">
-    <h1>Hi, I'm <span>Funds</span></h1>
+    <h1><span id="typing"></span></h1>
     <p>I build high-quality, fast and modern web applications that solve real-world problems and help businesses grow.</p>
     <a class="btn" href="#projects">View My Work</a>
   </div>  <div class="hero-card">
@@ -261,5 +261,37 @@
   <a class="fab-btn whatsapp" href="https://wa.me/2347055420578" target="_blank">💬</a>
   <a class="fab-btn messenger" href="https://m.me/funds" target="_blank">💙</a>
   <a class="fab-btn email" href="mailto:odigwejoshua7@gmail.com">✉️</a>
-</div></body>
+</div><script>
+const words = ["I am Funds", "Web Developer", "Freelancer", "JavaScript Builder"];
+let i = 0;
+let j = 0;
+let current = "";
+let isDeleting = false;
+const el = document.getElementById("typing");
+
+function type() {
+  if (!el) return;
+
+  current = words[i];
+
+  if (!isDeleting) {
+    el.innerHTML = current.substring(0, j++);
+    if (j > current.length) {
+      isDeleting = true;
+      setTimeout(type, 1000);
+      return;
+    }
+  } else {
+    el.innerHTML = current.substring(0, j--);
+    if (j < 0) {
+      isDeleting = false;
+      i = (i + 1) % words.length;
+    }
+  }
+
+  setTimeout(type, isDeleting ? 60 : 120);
+}
+
+type();
+</script></body>
 </html>
