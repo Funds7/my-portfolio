@@ -4,15 +4,20 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<title>Funds | Web Developer Portfolio</title>
+<title>Funds | Freelance Web Developer Portfolio</title>
 
-<meta name="description" content="Funds is a modern web developer building high-quality websites, apps, and digital products. Hire for freelance web development." />
-<meta name="keywords" content="web developer, freelancer, HTML CSS JavaScript, portfolio, frontend developer Nigeria" />
+<meta name="description" content="Funds is a freelance web developer building modern, fast, and responsive websites for businesses and clients worldwide." />
+
+<meta name="keywords" content="web developer Nigeria, freelancer portfolio, HTML CSS JavaScript developer, hire web developer" />
+
 <meta name="author" content="Funds" />
 
-<!-- Open Graph -->
+<!-- Google Verification -->
+<meta name="google-site-verification" content="z-26G2aTAJsbTDwcE6Sl4BArrzWIv1cfRAQsX1O1OTo" />
+
+<!-- Open Graph (for sharing) -->
 <meta property="og:title" content="Funds | Web Developer Portfolio" />
-<meta property="og:description" content="Modern freelancer building fast and responsive websites." />
+<meta property="og:description" content="Modern freelancer building high-quality websites and apps." />
 <meta property="og:type" content="website" />
 
 <style>
@@ -80,7 +85,7 @@ body{
 }
 
 .hero h1{
-  font-size:3.2rem;
+  font-size:3rem;
 }
 
 .hero h1 span{
@@ -108,6 +113,7 @@ body{
   transform:scale(1.05);
 }
 
+/* CARD */
 .hero-card{
   width:280px;
   padding:20px;
@@ -200,7 +206,7 @@ footer{
   color:#64748b;
 }
 
-/* FLOATING BUTTONS */
+/* FLOATING */
 .fab-container{
   position:fixed;
   bottom:20px;
@@ -240,7 +246,7 @@ footer{
 <!-- NAV -->
 <div class="nav">
   <div class="logo">
-    <img src="icon.png">
+    <img src="icon.png" alt="Funds Logo">
     Funds
   </div>
 
@@ -256,14 +262,14 @@ footer{
 <div class="hero" id="home">
   <div>
     <h1><span id="typing"></span></h1>
-    <p>I build high-quality modern websites and apps that help businesses grow and convert visitors into customers.</p>
+    <p>I build modern, fast and responsive websites that help businesses grow and convert visitors into clients.</p>
     <a class="btn" href="#projects">View My Work</a>
   </div>
 
   <div class="hero-card">
     <img src="icon.png">
     <h3>Funds</h3>
-    <p>Frontend Developer</p>
+    <p>Freelance Web Developer</p>
   </div>
 </div>
 
@@ -278,13 +284,13 @@ footer{
 </div>
 
 <div class="card">
-<h3>Landing Page</h3>
-<p>High converting business landing page UI.</p>
+<h3>Landing Pages</h3>
+<p>High-converting business landing pages.</p>
 </div>
 
 <div class="card">
 <h3>Portfolio System</h3>
-<p>Reusable portfolio template for freelancers.</p>
+<p>Reusable template for freelancers.</p>
 </div>
 
 </div>
@@ -294,17 +300,9 @@ footer{
 <section id="skills">
 <h2>Skills</h2>
 
-<div class="skill">HTML
-<div class="bar"><div class="fill" style="width:95%"></div></div>
-</div>
-
-<div class="skill">CSS
-<div class="bar"><div class="fill" style="width:90%"></div></div>
-</div>
-
-<div class="skill">JavaScript
-<div class="bar"><div class="fill" style="width:85%"></div></div>
-</div>
+<div class="skill">HTML <div class="bar"><div class="fill" style="width:95%"></div></div></div>
+<div class="skill">CSS <div class="bar"><div class="fill" style="width:90%"></div></div></div>
+<div class="skill">JavaScript <div class="bar"><div class="fill" style="width:85%"></div></div></div>
 
 </section>
 
@@ -313,9 +311,9 @@ footer{
 <h2>Testimonials</h2>
 
 <div class="testimonials">
-<div class="quote">“Funds built my website fast and clean. Highly recommended.”</div>
-<div class="quote">“Very professional developer. Great UI design skills.”</div>
-<div class="quote">“My business conversion increased after his landing page.”</div>
+<div class="quote">“Very clean and professional work.”</div>
+<div class="quote">“Fast delivery and modern design.”</div>
+<div class="quote">“Helped my business get more clients.”</div>
 </div>
 </section>
 
@@ -344,7 +342,6 @@ const el=document.getElementById("typing");
 
 function type(){
   let word=words[i];
-
   el.innerHTML = word.substring(0, j);
 
   if(!del){
