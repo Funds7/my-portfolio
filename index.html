@@ -3,240 +3,122 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Funds | Web Developer Portfolio</title>
 
-<title>Funds | Freelance Web Developer Portfolio</title>
-
-<meta name="description" content="Funds is a freelance web developer building modern, fast, and responsive websites for businesses and clients worldwide." />
-
-<meta name="keywords" content="web developer Nigeria, freelancer portfolio, HTML CSS JavaScript developer, hire web developer" />
-
-<meta name="author" content="Funds" />
-
-<!-- Google Verification -->
-<meta name="google-site-verification" content="z-26G2aTAJsbTDwcE6Sl4BArrzWIv1cfRAQsX1O1OTo" />
-
-<!-- Open Graph (for sharing) -->
-<meta property="og:title" content="Funds | Web Developer Portfolio" />
-<meta property="og:description" content="Modern freelancer building high-quality websites and apps." />
-<meta property="og:type" content="website" />
+<meta name="description" content="Funds is a freelance web developer building modern, fast, and responsive websites that help businesses grow online." />
+<meta name="keywords" content="web developer, frontend developer, portfolio, freelancer Nigeria, HTML CSS JavaScript" />
 
 <style>
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  font-family:system-ui, Arial;
 }
 
 body{
-  background: radial-gradient(circle at top, #0f172a, #050814);
-  color:#e2e8f0;
-  overflow-x:hidden;
+  background:#0b1220;
+  color:#e5e7eb;
 }
 
 /* NAV */
 .nav{
   display:flex;
   justify-content:space-between;
-  align-items:center;
-  padding:18px 40px;
+  padding:18px 30px;
+  background:rgba(0,0,0,0.4);
   position:sticky;
   top:0;
-  backdrop-filter:blur(15px);
-  background:rgba(15,23,42,0.6);
-  border-bottom:1px solid rgba(255,255,255,0.06);
-  z-index:1000;
+  backdrop-filter:blur(10px);
 }
 
 .logo{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  font-weight:800;
-}
-
-.logo img{
-  width:38px;
-  height:38px;
-  border-radius:10px;
-}
-
-.nav-links a{
-  margin:0 10px;
-  font-size:14px;
-  opacity:0.7;
-  transition:0.2s;
-}
-
-.nav-links a:hover{
-  opacity:1;
+  font-weight:bold;
   color:#38bdf8;
+}
+
+.nav a{
+  color:#cbd5e1;
+  margin:0 10px;
+  text-decoration:none;
 }
 
 /* HERO */
 .hero{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:90px 40px;
-  max-width:1100px;
-  margin:auto;
-  gap:40px;
+  text-align:center;
+  padding:80px 20px;
 }
 
 .hero h1{
-  font-size:3rem;
+  font-size:2.5rem;
 }
 
-.hero h1 span{
+.hero h2{
   color:#38bdf8;
+  margin-top:10px;
 }
 
 .hero p{
-  margin-top:15px;
+  max-width:600px;
+  margin:15px auto;
   color:#94a3b8;
-  max-width:500px;
 }
 
 .btn{
   display:inline-block;
-  margin-top:20px;
-  padding:12px 22px;
-  background:linear-gradient(135deg,#38bdf8,#6366f1);
-  color:#0f172a;
+  margin-top:15px;
+  padding:12px 18px;
+  background:#38bdf8;
+  color:#000;
+  border-radius:8px;
+  text-decoration:none;
   font-weight:bold;
-  border-radius:10px;
-  transition:0.2s;
-}
-
-.btn:hover{
-  transform:scale(1.05);
-}
-
-/* CARD */
-.hero-card{
-  width:280px;
-  padding:20px;
-  border-radius:20px;
-  text-align:center;
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.08);
-}
-
-.hero-card img{
-  width:120px;
-  height:120px;
-  border-radius:50%;
-  border:3px solid #38bdf8;
 }
 
 /* SECTIONS */
 section{
-  max-width:1000px;
-  margin:90px auto;
+  max-width:900px;
+  margin:60px auto;
   padding:0 20px;
 }
 
 h2{
-  font-size:1.8rem;
   margin-bottom:20px;
+  color:#38bdf8;
 }
 
 /* PROJECTS */
-.projects{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
 .card{
+  background:#111827;
   padding:20px;
-  border-radius:16px;
-  background:rgba(255,255,255,0.04);
-  border:1px solid rgba(255,255,255,0.08);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-8px);
-  border-color:#38bdf8;
+  margin-bottom:15px;
+  border-radius:10px;
+  border:1px solid #1f2937;
 }
 
 /* SKILLS */
-.skill{
-  margin:10px 0;
-}
-
-.bar{
-  height:8px;
-  background:#1e293b;
+.skills span{
+  display:inline-block;
+  padding:8px 12px;
+  background:#1f2937;
+  margin:5px;
   border-radius:20px;
-  overflow:hidden;
-}
-
-.fill{
-  height:100%;
-  background:linear-gradient(90deg,#38bdf8,#6366f1);
-}
-
-/* TESTIMONIALS */
-.testimonials{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
-.quote{
-  padding:20px;
-  border-radius:16px;
-  background:rgba(255,255,255,0.04);
+  font-size:13px;
 }
 
 /* CONTACT */
 .contact{
-  padding:20px;
-  border-radius:16px;
-  background:rgba(255,255,255,0.04);
+  text-align:center;
+  padding:40px;
+  background:#111827;
+  border-radius:10px;
 }
 
 /* FOOTER */
 footer{
   text-align:center;
-  padding:30px;
+  padding:20px;
   color:#64748b;
-}
-
-/* FLOATING */
-.fab-container{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-
-.fab-btn{
-  width:50px;
-  height:50px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:50%;
-  font-size:20px;
-  color:white;
-  box-shadow:0 10px 20px rgba(0,0,0,0.3);
-}
-
-.whatsapp{background:#25D366;}
-.messenger{background:#0084ff;}
-.email{background:#ea4335;}
-
-@media(max-width:768px){
-  .hero{
-    flex-direction:column;
-    text-align:center;
-  }
 }
 </style>
 </head>
@@ -245,13 +127,8 @@ footer{
 
 <!-- NAV -->
 <div class="nav">
-  <div class="logo">
-    <img src="icon.png" alt="Funds Logo">
-    Funds
-  </div>
-
-  <div class="nav-links">
-    <a href="#home">Home</a>
+  <div class="logo">Funds</div>
+  <div>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
@@ -259,111 +136,89 @@ footer{
 </div>
 
 <!-- HERO -->
-<div class="hero" id="home">
-  <div>
-    <h1><span id="typing"></span></h1>
-    <p>I build modern, fast and responsive websites that help businesses grow and convert visitors into clients.</p>
-    <a class="btn" href="#projects">View My Work</a>
-  </div>
+<div class="hero">
+  <h1>Hi, I'm Funds 👋</h1>
+  <h2>Frontend Developer & Web Designer</h2>
+  <p>
+    I build modern, fast, and responsive websites that help businesses attract customers and grow online.
+  </p>
 
-  <div class="hero-card">
-    <img src="icon.png">
-    <h3>Funds</h3>
-    <p>Freelance Web Developer</p>
-  </div>
+  <a class="btn" href="#projects">View My Work</a>
 </div>
+
+<!-- ABOUT -->
+<section>
+  <h2>About Me</h2>
+  <p>
+    I am a freelance web developer focused on building clean and responsive websites.
+    I turn ideas into real digital products that help businesses grow online.
+  </p>
+</section>
 
 <!-- PROJECTS -->
 <section id="projects">
-<h2>Projects</h2>
-<div class="projects">
+  <h2>Projects</h2>
 
-<div class="card">
-<h3>Expense Tracker</h3>
-<p>Smart finance tracker using JavaScript & LocalStorage.</p>
-</div>
+  <div class="card">
+    <h3>Expense Tracker App</h3>
+    <p>
+      A fully functional web app that tracks income and expenses using JavaScript.
+    </p>
+    <ul>
+      <li>Add / delete transactions</li>
+      <li>Live balance calculation</li>
+      <li>Local storage support</li>
+    </ul>
+  </div>
 
-<div class="card">
-<h3>Landing Pages</h3>
-<p>High-converting business landing pages.</p>
-</div>
+  <div class="card">
+    <h3>Business Landing Page</h3>
+    <p>High converting landing page for small businesses and startups.</p>
+  </div>
 
-<div class="card">
-<h3>Portfolio System</h3>
-<p>Reusable template for freelancers.</p>
-</div>
-
-</div>
+  <div class="card">
+    <h3>Portfolio Website</h3>
+    <p>Reusable portfolio template for freelancers and developers.</p>
+  </div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
-<h2>Skills</h2>
-
-<div class="skill">HTML <div class="bar"><div class="fill" style="width:95%"></div></div></div>
-<div class="skill">CSS <div class="bar"><div class="fill" style="width:90%"></div></div></div>
-<div class="skill">JavaScript <div class="bar"><div class="fill" style="width:85%"></div></div></div>
-
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Responsive Design</span>
+    <span>Git</span>
+    <span>UI Design</span>
+  </div>
 </section>
 
-<!-- TESTIMONIALS -->
+<!-- WHY ME -->
 <section>
-<h2>Testimonials</h2>
-
-<div class="testimonials">
-<div class="quote">“Very clean and professional work.”</div>
-<div class="quote">“Fast delivery and modern design.”</div>
-<div class="quote">“Helped my business get more clients.”</div>
-</div>
+  <h2>Why Work With Me?</h2>
+  <div class="card">
+    ✔ Clean modern design<br/>
+    ✔ Mobile friendly websites<br/>
+    ✔ Fast delivery<br/>
+    ✔ Good communication<br/>
+    ✔ High quality work
+  </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
-<h2>Contact</h2>
-<p>Email: odigwejoshua7@gmail.com</p>
-<p>GitHub: github.com/yourname</p>
+  <h2>Let’s Work Together</h2>
+  <p>Email: odigwejoshua7@gmail.com</p>
+  <p>I am available for freelance work worldwide 🌍</p>
+
+  <a class="btn" href="mailto:odigwejoshua7@gmail.com">Hire Me</a>
 </section>
 
 <footer>
-© 2026 Funds. All rights reserved.
+  © 2026 Funds. All rights reserved.
 </footer>
-
-<!-- FLOATING -->
-<div class="fab-container">
-  <a class="fab-btn whatsapp" href="https://wa.me/2347055420578">💬</a>
-  <a class="fab-btn messenger" href="#">💙</a>
-  <a class="fab-btn email" href="mailto:odigwejoshua7@gmail.com">✉️</a>
-</div>
-
-<script>
-const words = ["I am Funds", "Web Developer", "Freelancer", "UI Builder"];
-let i=0, j=0, del=false;
-const el=document.getElementById("typing");
-
-function type(){
-  let word=words[i];
-  el.innerHTML = word.substring(0, j);
-
-  if(!del){
-    j++;
-    if(j>word.length){
-      del=true;
-      setTimeout(type,1000);
-      return;
-    }
-  }else{
-    j--;
-    if(j<0){
-      del=false;
-      i=(i+1)%words.length;
-    }
-  }
-
-  setTimeout(type, del?60:120);
-}
-
-type();
-</script>
 
 </body>
 </html>
