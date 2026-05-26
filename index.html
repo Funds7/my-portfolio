@@ -219,10 +219,36 @@ footer{
 
   <a class="btn" href="mailto:odigwejoshua7@gmail.com">Hire Me</a>
 </section>
-<a href="https://wa.me/2347055420578?text=Hi%20Funds%2C%20I%20came%20from%20your%20portfolio%20and%20I%20want%20to%20hire%20you" 
-   class="whatsapp-float" target="_blank">
-  💬
-</a>
+<!-- WhatsApp Floating Button -->
+<div class="wa-container">
+
+  <!-- Floating Icon -->
+  <div class="wa-button" onclick="toggleChat()">
+    💬
+  </div>
+
+  <!-- Chat Popup -->
+  <div class="wa-chat" id="waChat">
+
+    <div class="wa-header">
+      <h4>Chat with Funds</h4>
+      <span onclick="toggleChat()">✖</span>
+    </div>
+
+    <div class="wa-body">
+      <p>Hi 👋</p>
+      <p>How can I help you today?</p>
+    </div>
+
+    <div class="wa-footer">
+      <a href="https://wa.me/2347055420578?text=Hi%20Funds%2C%20I%20saw%20your%20portfolio%20and%20I%20want%20to%20work%20with%20you." 
+         target="_blank">
+        Start Chat on WhatsApp
+      </a>
+    </div>
+
+  </div>
+</div>
 <footer>
   © 2026 Funds. All rights reserved.
 </footer>
